@@ -59,7 +59,7 @@ def add_logo():
         """
         <style>
             [data-testid="stSidebarNav"] {
-                background-image: url(https://github.com/chemicoPy/crypto-conv-dashboard/blob/main/img/page_icon.png);
+                background-image: url(https://github.com/SegunDave/crypto-conv/blob/main/img/page_icon.png);
                 background-repeat: no-repeat;
                 padding-top: 120px;
                 background-position: 20px 20px;
