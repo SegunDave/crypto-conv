@@ -33,10 +33,12 @@ import statsmodels.regression.linear_model as rg
 
 # Desiging & implementing changes to the standard streamlit UI/UX
 
-st.sidebar.image("https://www.urbanwhales.com/assets/img/brand/urbanwhales.svg", use_column_width=True)
+
 
 st.title('Crypto Converter to Local Currency')
 st.subheader("Navigate to side bar to see full project info as well as options to choose from, to get started!")
+
+st.sidebar.image("https://www.urbanwhales.com/assets/img/brand/urbanwhales.svg", use_column_width=True)
 
 from forex_python.converter import CurrencyRates
 from forex_python.converter import CurrencyCodes
@@ -45,40 +47,10 @@ from pylivecoinwatch import LiveCoinWatchAPI
 
 
 YOUR_APP_ID = st.secrets["api_key"]
-#simpleConverter = CurrencyConverter(YOUR_APP_ID, ["MATIC" , "XAU","BTC","ETH","DOGE", "GBP", 
-#             "EUR", "NZD", "USD", "NPR", "BTC", "JPY","BGN","CZK","DKK","GBP","HUF","PLN","RON","SEK", 
-#                                                  "CHF","ISK","NOK","TRY","AUD","BRL","CAD","CNY","HKD","IDR","ILS",
-#                                                  "INR","KRW","MXN","MYR","PHP","SGD", "THB", "ZAR"])
-
 
 
 c = CurrencyRates()
     
-def add_logo():
-    st.markdown(
-        """
-        <style>
-            [data-testid="stSidebarNav"] {
-                background-image: url(https://github.com/SegunDave/crypto-conv/blob/main/img/page_icon.png);
-                background-repeat: no-repeat;
-                padding-top: 120px;
-                background-position: 20px 20px;
-            }
-            [data-testid="stSidebarNav"]::before {
-                content: "My Company Name";
-                margin-left: 20px;
-                margin-top: 20px;
-                font-size: 30px;
-                position: relative;
-                top: 100px;
-            }
-        </style>
-        """,
-        unsafe_allow_html=True,
-    )
-
-add_logo()
-
   
     # ------ layout setting---------------------------
 st.sidebar.markdown(
