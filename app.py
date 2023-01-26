@@ -169,7 +169,7 @@ if st.sidebar.button("Show Viz!"):
 
     layout = go.Layout(title= f'{instrument} in {Tframe} Candlestick with Range Slider',
                    xaxis={'rangeslider':{'visible':True}})
-    fig = go.Figure(data=data,layout=layout, width=800, height=600)
+    fig = go.Figure(data=data,layout=layout)
     plt.show()
     st.write(fig)
 
