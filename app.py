@@ -37,7 +37,9 @@ import statsmodels.regression.linear_model as rg
 
 st.title('Crypto Converter to Local Currency')
 st.subheader("Navigate to side bar to see full project info as well as options to choose from, to get started!")
-st.sidebar.image("https://lh6.googleusercontent.com/28Z-ruLPUFRdtMzGIOIgb0atJPNJgTtvhanzgho7cZDPrDQfyKHhL05yJXDGOd_Z9co=w2400", use_column_width=True)
+st.sidebar.image("https://www.urbanwhales.com/assets/img/brand/urbanwhales.svg", use_column_width=True)
+#st.sidebar.image("https://lh6.googleusercontent.com/28Z-ruLPUFRdtMzGIOIgb0atJPNJgTtvhanzgho7cZDPrDQfyKHhL05yJXDGOd_Z9co=w2400", use_column_width=True)
+
 from forex_python.converter import CurrencyRates
 from forex_python.converter import CurrencyCodes
 
@@ -167,9 +169,9 @@ if st.sidebar.button("Show Viz!"):
 
     layout = go.Layout(title= f'{instrument} in {Tframe} Candlestick with Range Slider',
                    xaxis={'rangeslider':{'visible':True}})
-    fig = go.Figure(data=data,layout=layout)
+    fig = go.Figure(data=data,layout=layout, width=800, height=600)
     plt.show()
-    st.write(fig, width=800, height=600)
+    st.write(fig)
 
     
     import plotly.graph_objs as go
