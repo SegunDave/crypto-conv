@@ -38,8 +38,6 @@ import statsmodels.regression.linear_model as rg
 st.title('Crypto Converter to Local Currency')
 st.subheader("Navigate to side bar to see full project info as well as options to choose from, to get started!")
 
-st.sidebar.image("https://www.urbanwhales.com/assets/img/brand/urbanwhales.svg", use_column_width=True)
-
 from forex_python.converter import CurrencyRates
 from forex_python.converter import CurrencyCodes
 
