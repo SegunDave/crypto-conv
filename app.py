@@ -169,7 +169,7 @@ if st.sidebar.button("Show Viz!"):
                    xaxis={'rangeslider':{'visible':True}})
     fig = go.Figure(data=data,layout=layout)
     plt.show()
-    st.write(fig)
+    st.write(fig, width=800, height=600)
 
     
     import plotly.graph_objs as go
