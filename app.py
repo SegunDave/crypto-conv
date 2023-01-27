@@ -253,6 +253,7 @@ st.sidebar.markdown(
     # Other App(s):
  
     1. [Weather App](https://weather-dash.streamlit.app/)
+    2. [Market Breath](https://marketbreath.streamlit.app/)
     
     """)
     
